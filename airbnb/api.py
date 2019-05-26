@@ -297,7 +297,7 @@ class Api(object):
         assert(self._access_token)
 
         params = {
-            '_format': 'for_trip_planner'
+            '_format': 'for_mobile_host'
         }
 
         r = self._session.get(API_URL + "/reservations/{}".format(reservation_id), params=params)
